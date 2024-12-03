@@ -1,0 +1,55 @@
+﻿codigo sql pra rodar :
+
+-- Criação do Banco de Dados
+CREATE DATATABLE IF NOT EXISTS Academia;
+
+USE Academia;
+
+-- Tabela de Alunos
+CREATE TABLE Alunos (
+    IdAluno INT PRIMARY KEY IDENTITY(1,1),  -- Auto-incremento
+    Nome VARCHAR(100) NOT NULL,
+    Email VARCHAR(100) NOT NULL
+);
+
+-- Tabela de Projetos (com campos adicionais)
+CREATE TABLE Projetos (
+    IdProjeto INT PRIMARY KEY IDENTITY(1,1),  -- Auto-incremento
+    NomeProjeto VARCHAR(100) NOT NULL,
+    DataInicio DATE,
+    DataFinal DATE,
+    ProfessorOrientador VARCHAR(100)
+);
+
+-- Tabela de Relacionamento (Muitos-para-Muitos)
+CREATE TABLE Alunos_Projetos (
+    IdAluno INT,
+    IdProjeto INT,
+    PRIMARY KEY (IdAluno, IdProjeto),
+    FOREIGN KEY (IdAluno) REFERENCES Alunos(IdAluno),
+    FOREIGN KEY (IdProjeto) REFERENCES Projetos(IdProjeto)
+);
+
+
+operacao de update: 
+
+DECLARE @Nome VARCHAR(100);
+DECLARE @Email VARCHAR(100);
+DECLARE @IdAluno INT;
+DECLARE @IdProjeto INT;
+
+-- Atribuindo valores às variáveis
+SET @Nome = 'João Silva';    -- Substitua com o nome do aluno que deseja
+SET @Email = 'joao@exemplo.com';   -- Substitua com o e-mail do aluno
+SET @IdAluno = 1;    -- Substitua com o Id do aluno que você deseja atualizar
+SET @IdProjeto = 2;  -- Substitua com o Id do projeto que você deseja associar ao aluno
+
+-- Atualiza os dados do aluno na tabela Alunos
+UPDATE Alunos
+SET Nome = @Nome, Email = @Email
+WHERE IdAluno = @IdAluno;
+
+-- Atualiza a associação do aluno com o projeto na tabela Alunos_Projetos
+UPDATE Alunos_Projetos
+SET IdProjeto = @IdProjeto
+WHERE IdAluno = @IdAluno;

@@ -1,0 +1,17 @@
+C:\Users\User\source\repos\testes\testes\bin\Debug\testes.exe.config
+C:\Users\User\source\repos\testes\testes\bin\Debug\testes.exe
+C:\Users\User\source\repos\testes\testes\bin\Debug\testes.pdb
+C:\Users\User\source\repos\testes\testes\obj\Debug\testes.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\testes\testes\obj\Debug\testes.FormAluno.resources
+C:\Users\User\source\repos\testes\testes\obj\Debug\testes.FormPrincipal.resources
+C:\Users\User\source\repos\testes\testes\obj\Debug\testes.FrmProjeto.resources
+C:\Users\User\source\repos\testes\testes\obj\Debug\testes.Properties.Resources.resources
+C:\Users\User\source\repos\testes\testes\obj\Debug\testes.csproj.GenerateResource.cache
+C:\Users\User\source\repos\testes\testes\obj\Debug\testes.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\testes\testes\obj\Debug\testes.exe
+C:\Users\User\source\repos\testes\testes\obj\Debug\testes.pdb
+C:\Users\User\source\repos\testes\testes\obj\Debug\testes.Editar.FrmEditarProjeto.resources
+C:\Users\User\source\repos\testes\testes\obj\Debug\testes.LoginEntrar.EditarUsuario.resources
+C:\Users\User\source\repos\testes\testes\obj\Debug\testes.LoginEntrar.GerenciarUsuarios.resources
+C:\Users\User\source\repos\testes\testes\obj\Debug\testes.LoginEntrar.LoginPagina1.resources
+C:\Users\User\source\repos\testes\testes\obj\Debug\testes.LoginEntrar.NovoUsuario.resources
